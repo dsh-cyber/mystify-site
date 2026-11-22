@@ -1,0 +1,99 @@
+/* Mystify — white theme preview. Header and footer stay black; page body flips to white. */
+.tw{background:#fff}
+.tw main{
+  --black:#ffffff;--white:#020901;--black-2:#f4f5f2;--black-3:#e9ebe6;
+  --line:rgba(2,9,1,.12);--line-strong:rgba(2,9,1,.24);
+  --muted:#5a5f59;
+  background:#fff;color:#020901;
+}
+/* sections that were already light or lime keep their original ink */
+.tw main .light,.tw main .lime,.tw main .poster,.tw main .tile--feature{--black:#020901;--white:#ffffff;--black-2:#0b120a;--line:rgba(255,255,255,.13);--line-strong:rgba(255,255,255,.26);--muted:#9ba199}
+.tw main .light{background:#f4f5f2;color:#020901;--line:rgba(2,9,1,.12);--line-strong:rgba(2,9,1,.24);--muted:#5a5f59}
+.tw main .lime{color:#020901;--line:rgba(2,9,1,.18);--line-strong:rgba(2,9,1,.3);--muted:#2d3229}
+.tw main .lime .btn--black{background:#020901;color:#fff}
+
+/* translucent white text → translucent ink */
+.tw main :is(.stat__l,.modules span,.step p,.bhero__row p,.franchise p,.person .bio,.values p,.empty p,.legal p,.bprof__i p,.hx-label p,.pill--beta){color:rgba(2,9,1,.7)}
+.tw main .marquee span{color:rgba(2,9,1,.45)}
+.tw main .bprof{background:rgba(2,9,1,.12);border-color:rgba(2,9,1,.12)}
+.tw main .tile--feature p{color:rgba(255,255,255,.72)}
+
+/* lime used as text/ink on white → black; lime fills stay lime */
+.tw main :is(.lime-t,.stat__n,.step__n,.lgrid__arr,.lgrid__all,.bcard__top svg,.eps li span,.person__ini,.person .role,.marquee span.tbs,.form__ok,.draft){color:#020901}
+.tw main .light .stat__n{color:#020901}
+.tw main .person .role{font-weight:700}
+.tw main .press a:hover h3,.tw main .cblock a:hover,.tw main .person .li:hover{color:#020901;text-decoration:underline}
+.tw main .pill--live{color:#020901;border-color:#020901}
+.tw main .pill--live::before{background:#020901}
+.tw main .bcard:hover,.tw main .bnext a:hover{border-color:#020901}
+.tw main .field input:focus,.tw main .field select:focus,.tw main .field textarea:focus{border-color:#020901}
+.tw main .draft,.tw main .form__ok{background:#e5ff00}
+.tw main .label::before{background:#020901}
+.tw main .lime .label::before{background:#020901}
+.tw main :focus-visible{outline-color:#020901}
+.tw main .legal aside a[aria-current="page"]{border-left-color:#020901}
+
+/* the slanted M motif stays brand lime, outlined for contrast on white */
+.tw main :is(.stripe,.hx-m){color:#e5ff00}
+.tw main .lime .stripe{color:#020901}
+
+/* white logos → black logos */
+.tw main img[src*="assets/logos/"]{filter:invert(1)}
+.tw main :is(.light,.lime) img[src*="assets/logos/"]{filter:invert(1)}
+.tw main .poster img[src*="assets/logos/"],.tw main .tile--feature img[src*="assets/logos/"]{filter:none}
+
+/* photo frames */
+.tw main .hx-t,.tw main .step__ph{background:#ececea}
+.tw main .lgrid a:hover{background:#f4f5f2}
+.tw main .gallery figcaption{background:#020901;color:#fff}
+.tw main .btn--ghost{color:#020901;border-color:rgba(2,9,1,.3)}
+.tw main .btn--ghost:hover{border-color:#020901}
+.tw main .btn--black{background:#020901;color:#fff}
+.tw main :is(.btn--lime,.studio-nav a[aria-current="page"],.car__ctrl button:hover,.filters button[aria-pressed="true"]){color:#020901}
+.tw main .tile--feature .pill--live{color:#e5ff00;border-color:rgba(229,255,0,.45)}
+.tw main .tile--feature .pill--live::before{background:#e5ff00}
+.tw main .tile--feature .pill--beta{color:rgba(255,255,255,.7)}
+.tw main .tile--feature :is(.lime-t,.tile__n){color:#e5ff00}
+.tw main .bprof__n{color:#020901}
+/* show-card labels: lime ink is unreadable on white */
+.tw main .show .poster__k{color:#020901}
+/* platform modules inside the dark feature tile keep light ink */
+.tw main .tile--feature .modules span{color:rgba(255,255,255,.7)}
+.tw .prose--dk p{color:#3d4339}
+.tw .prose--dk .lead{color:#020901}
+.tw .pstats b,.tw .book__link{color:#020901}
+.tw .presslist__i:hover{color:#020901;text-decoration:underline}
+.tw .book .poster__k{color:#4a5a00}
+.tw .hpress__ms{color:#3d4339}
+.tw .hpress__ms b{color:#020901}
+.tw .fpd-logo{filter:invert(1) brightness(.04)}
+.book__flag,.tw .book__flag,.tw main .book__flag{background:#E5FF00!important;color:#020901!important}
+.tw .ms-back,.tw .phero .lede a{color:#020901}
+.tw .check input{accent-color:#020901}
+.tw .form__ok{color:#020901;background:rgba(229,255,0,.35)}
+.tw .dist__p a{color:#020901}
+.tw .flow li{border-top-color:#020901}
+.tw .flow__n{color:#020901}
+.tw .plat-t{border-color:rgba(2,9,1,.14)}
+.tw .vals li{border-top-color:#020901}.tw .vals__n{color:#020901}
+.tw .tkr{background:#020901}
+.tw main .pnets .mq-logo{filter:invert(1)}.tw .pnets span{color:rgba(2,9,1,.6)}
+.tw .tkr{background:#fff;box-shadow:none;border-color:#020901}
+.tw .tkr__i{color:#020901;border-right-color:rgba(2,9,1,.12)}
+.tw .tkr__i time{color:rgba(2,9,1,.55)}
+.tw .tkr__pause{color:#020901;border-left-color:rgba(2,9,1,.12)}
+.tw main .tkr__logo{filter:invert(1) brightness(.04)}
+.tw main .plats .plat-t img[src]{filter:none}
+.tw main .plats.plats--mono .plat-t img[src]{filter:brightness(0) saturate(100%)}
+.tw .tkr{border-top:2px solid #020901;border-bottom:2px solid #020901;box-shadow:none}
+.tw .people--np{border-top-color:rgba(2,9,1,.12)}
+.tw .imprint-lock__x{background:rgba(2,9,1,.2)}
+
+/* children's imprints (white) */
+.tw .kid{border-top-color:rgba(0,0,0,.14)}
+.tw .kid__meta span{border-color:rgba(0,0,0,.3)}
+.tw .kid__n{color:#020901}
+.tw .kid__c img{box-shadow:0 14px 30px rgba(0,0,0,.18)}
+.tw .kid__list,.tw .kid__list li{border-color:rgba(2,9,1,.14)}
+.tw .kid__fic-card{border-color:rgba(2,9,1,.14)}.tw .kid__fic-card:hover{border-color:rgba(2,9,1,.4)}
+.tw .hpub-lock img{filter:invert(1)}
