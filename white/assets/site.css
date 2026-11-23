@@ -1082,3 +1082,14 @@ address{font-style:normal}
 @media (min-width:1200px){.pf-row.pf-row--side{gap:var(--s7,28px) var(--s6)}.pf-row--side img{height:30px;max-width:132px}.pf-row--side img.tall{height:50px}}
 /* Home hero: lift the portrait trio to sit level with the headline */
 @media (min-width:1041px){.hx--home .hx-art{align-self:start}}
+
+/* Home: a little more breathing room between sections and blocks */
+.pg-tight:not(.pg-pub) .sec{padding-block:clamp(3.5rem,2.5rem + 3.4vw,5.75rem)}
+.pg-tight:not(.pg-pub) .head{margin-bottom:var(--s10)}
+.pg-tight:not(.pg-pub) .head--split{gap:var(--s8)}
+.pg-tight:not(.pg-pub) .attn__lede{margin-top:var(--s6)}
+.pg-tight:not(.pg-pub) .attn .btns,.pg-tight:not(.pg-pub) .hpress__copy .btns{margin-top:var(--s8)}
+.pg-tight:not(.pg-pub) .hpress__copy .lede{margin-top:var(--s6)}
+.pg-tight:not(.pg-pub) .hpress__covers{gap:var(--s6)}
+.pg-tight:not(.pg-pub) .hpress__in{gap:clamp(3rem,5vw,5rem)}
+.pg-tight:not(.pg-pub) .pband__row{margin-top:var(--s12)}
