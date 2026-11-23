@@ -1074,3 +1074,9 @@ address{font-style:normal}
 
 /* Portfolio logo row: two balanced, centered lines on desktop */
 @media (min-width:1200px){.pf-row{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s7,28px) 0}.pf-row li{flex:0 0 12.5%;display:flex;justify-content:center}.pf-row img{height:26px;max-width:120px}.pf-row img.tall{height:42px}}
+/* Portfolio hero: brand logos in the right-hand column */
+.pf-row.pf-row--side{margin:0;padding:0;border-top:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s6) var(--s5);align-items:center;justify-items:center}
+.pf-row--side li{display:flex;justify-content:center;width:100%}
+.pf-row--side img{height:26px;max-width:120px}.pf-row--side img.tall{height:44px}
+@media (max-width:820px){.pf-row.pf-row--side{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:var(--s8);justify-items:start}.pf-row--side li{justify-content:flex-start}.pf-row--side img{height:20px;max-width:96px}.pf-row--side img.tall{height:34px}}
+@media (min-width:1200px){.pf-row.pf-row--side{gap:var(--s7,28px) var(--s6)}.pf-row--side img{height:30px;max-width:132px}.pf-row--side img.tall{height:50px}}
