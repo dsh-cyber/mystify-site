@@ -1030,3 +1030,12 @@ address{font-style:normal}
 @media (min-width:1024px) and (max-width:1279px){.pband__row{grid-template-columns:130px minmax(0,1fr)}.pband .pnets li{zoom:.66}}
 @media (min-width:1024px) and (max-width:1099px){.pband .pnets li{zoom:.58}}
 @media (min-width:1280px){.pband .pnets li{zoom:.86}.pband .pnets .mq-logo--podcastone{height:36px}}
+/* Hero audience paths */
+.hero__paths{list-style:none;margin:var(--s6) 0 0;padding:var(--s5) 0 0;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:var(--s3) var(--s6)}
+.hero__paths a{display:inline-flex;align-items:center;gap:.45em;color:rgba(255,255,255,.82);font-weight:600;font-size:var(--text-sm,.95rem);text-decoration:none;transition:color .2s}
+.hero__paths a svg{width:14px;height:14px;transition:transform .2s}
+.hero__paths a:hover{color:var(--lime)}.hero__paths a:hover svg{transform:translateX(3px)}
+.reach__src{margin-top:var(--s6);opacity:.7}
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.cta-band .btn--outline{color:var(--black);border-color:var(--black)}.cta-band .btn--outline:hover{background:var(--black);color:var(--lime)}
+.nav>li>a,.nav>li>button{white-space:nowrap}
