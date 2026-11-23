@@ -1071,3 +1071,6 @@ address{font-style:normal}
 
 /* Leadership: no bios, align LinkedIn links */
 .person .li{margin-top:auto;padding-top:var(--s4);align-self:flex-start}
+
+/* Portfolio logo row: two balanced, centered lines on desktop */
+@media (min-width:1200px){.pf-row{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--s7,28px) 0}.pf-row li{flex:0 0 12.5%;display:flex;justify-content:center}.pf-row img{height:26px;max-width:120px}.pf-row img.tall{height:42px}}
