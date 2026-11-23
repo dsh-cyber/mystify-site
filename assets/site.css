@@ -1042,3 +1042,8 @@ address{font-style:normal}
 .person__bio{margin-top:var(--s3);color:var(--muted);font-size:var(--text-sm);line-height:1.5}
 .people--sm .person__bio{font-size:var(--text-xs)}
 .tw .person__bio{color:var(--muted-dark,#555)}
+/* Home brands: copy under the headline, portraits get the full right column */
+.attn--brands{align-items:center}
+.attn--brands .attn__lede{color:var(--muted);font-size:var(--text-lg);line-height:1.5;max-width:40ch;margin-top:var(--s6)}
+.attn--brands .btns{margin-top:var(--s6)}
+.attn--brands .attn__side .attn__trio{max-width:600px;margin-left:auto}
