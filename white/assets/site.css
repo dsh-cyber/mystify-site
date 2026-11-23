@@ -1083,13 +1083,13 @@ address{font-style:normal}
 /* Home hero: lift the portrait trio to sit level with the headline */
 @media (min-width:1041px){.hx--home .hx-art{align-self:start}}
 
-/* Home: a little more breathing room between sections and blocks */
-.pg-tight:not(.pg-pub) .sec{padding-block:clamp(3.5rem,2.5rem + 3.4vw,5.75rem)}
-.pg-tight:not(.pg-pub) .head{margin-bottom:var(--s10)}
-.pg-tight:not(.pg-pub) .head--split{gap:var(--s8)}
-.pg-tight:not(.pg-pub) .attn__lede{margin-top:var(--s6)}
-.pg-tight:not(.pg-pub) .attn .btns,.pg-tight:not(.pg-pub) .hpress__copy .btns{margin-top:var(--s8)}
-.pg-tight:not(.pg-pub) .hpress__copy .lede{margin-top:var(--s6)}
-.pg-tight:not(.pg-pub) .hpress__covers{gap:var(--s6)}
-.pg-tight:not(.pg-pub) .hpress__in{gap:clamp(3rem,5vw,5rem)}
-.pg-tight:not(.pg-pub) .pband__row{margin-top:var(--s12)}
+/* Home + Publishing: a little more breathing room between sections and blocks */
+.pg-tight .sec{padding-block:clamp(3.5rem,2.5rem + 3.4vw,5.75rem)}
+.pg-tight .head{margin-bottom:var(--s10)}
+.pg-tight .head--split{gap:var(--s8)}
+.pg-tight .attn__lede{margin-top:var(--s6)}
+.pg-tight .attn .btns,.pg-tight .hpress__copy .btns{margin-top:var(--s8)}
+.pg-tight .hpress__copy .lede{margin-top:var(--s6)}
+.pg-tight .hpress__covers{gap:var(--s6)}
+.pg-tight .hpress__in{gap:clamp(3rem,5vw,5rem)}
+.pg-tight .pband__row{margin-top:var(--s12)}
