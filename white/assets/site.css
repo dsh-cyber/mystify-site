@@ -1080,3 +1080,5 @@ address{font-style:normal}
 .pf-row--side img{height:26px;max-width:120px}.pf-row--side img.tall{height:44px}
 @media (max-width:820px){.pf-row.pf-row--side{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:var(--s8);justify-items:start}.pf-row--side li{justify-content:flex-start}.pf-row--side img{height:20px;max-width:96px}.pf-row--side img.tall{height:34px}}
 @media (min-width:1200px){.pf-row.pf-row--side{gap:var(--s7,28px) var(--s6)}.pf-row--side img{height:30px;max-width:132px}.pf-row--side img.tall{height:50px}}
+/* Home hero: lift the portrait trio to sit level with the headline */
+@media (min-width:1041px){.hx--home .hx-art{align-self:start}}
